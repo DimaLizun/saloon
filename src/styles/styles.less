@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  overflow-x: hidden;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+
+
+@font-face {
+  font-family: 'roboto-thin';
+  src: url('../fonts/roboto/Roboto-Thin2.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-ligth';
+  src: url('../fonts/roboto/Roboto-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('../fonts/roboto/Roboto-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'cormorant-boldItalic';
+  src: url('../fonts/roboto/Cormorant-BoldItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@purple: #641faa;
+
+.wrapper{
+  width: 100%;
+}
+
+.wrapper-header,
+.level-wpapper__block,
+.level-wrapper{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header{
+  height: 668px;
+  background: url("./../img/header-bg.jpg") 50% 50% no-repeat;
+  &-menu {
+    width: 638px;
+    padding: 34px 532px;
+    display: flex;
+    justify-content: space-between;
+
+    &__link{
+      font-family: roboto-thin;
+      font-size: 16px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+
+  &-maintext{
+    position: absolute;
+    width: 670px;
+    margin: 16px 508px;
+    color: #ffffff;
+  }
+
+  &-maintext__big{
+    font-family: cormorant-boldItalic;
+    font-size: 56px;
+  }
+
+  &-maintext__small{
+    font-family: roboto-ligth;
+    font-size: 35px;
+
+    padding: 34px 22px;
+    &-rigth{
+      padding-left: 75px;
+      font-size: 34px;
+      letter-spacing: 0.3px;
+    }
+
+  }
+
+  &-contact{
+    width: 333px;
+    height: 235px;
+    margin: 245px 729px;
+    background: #ffffff;
+    border: 10px solid #641faa;
+    border-top: 50px solid #641faa;
+    border-radius: 1px;
+  }
+
+  &-contact__head{
+    letter-spacing: 1.2px;
+    font-family: roboto-thin;
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    margin: -39px 42px;
+  }
+
+  &-contact__sprite{
+    background:url('../img/result.png');
+  }
+
+
+  &-contact__phone{
+    margin: 22px 78px;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-position: 0px 0px;
+  }
+
+  &-contact__icon{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 84px;
+    margin: -1px 120px;
+  }
+  &-contact__viber{
+    width: 38px;
+    height: 38px;
+    background-position: 0px -23px;
+  }
+
+  &-contact__whatsapp{
+    width: 38px;
+    height: 38px;
+    background-position: 0px -71px;
+  }
+
+  &-contact__number{
+    width: 149px;
+    margin: 15px 100px;
+    font-family: roboto-thin;
+    font-size: 22px;
+    color: #641faa;
+  }
+
+  &-contact__click{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+  }
+
+  &-contact__address{
+    width: 257px;
+    margin: 13px 41px;
+    letter-spacing: 0.3px;
+    font-family: roboto-ligth;
+    font-size: 18px;
+    color: #641faa;
+  }
+
+  &-contact__button{
+    width: 246px;
+    height: 50px;
+    background: #1cb100;
+    border: none;
+    border-radius: 3px;
+    font-family: roboto-bold;
+    font-size: 22px;
+    color: #ffffff;
+  }
+}
+
+.info{
+  height: 141px;
+  padding-left: 100px;
+
+  background: url("./../img/info-line1.jpg") 50% 50% no-repeat;
+
+  &-text{
+    padding: 19px 12px;
+  }
+
+  &-text__bold{
+    font-family: cormorant-boldItalic;
+    font-size: 48px;
+    color: #ffffff;
+
+  }
+
+  &-text__light{
+    font-family: roboto-thin;
+    font-size: 28px;
+    color: #a4a5a8;
+  }
+}
+
+.level{
+  height: 554px;
+
+
+  &-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+  }
+
+  &-hr{
+    width: 329px;
+    height: 5px;
+    margin-top: 22px;
+    color: #641faa;
+  }
+
+  &-text{
+    font-family: roboto-thin;
+    font-size: 48px;
+    color: #641faa;
+  }
+
+  &-about{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+
+
+
+
