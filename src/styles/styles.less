@@ -55,8 +55,8 @@ q:before, q:after {
 
 
 @font-face {
-  font-family: 'cormorant-boldItalic';
-  src: url('../fonts/roboto/Cormorant-BoldItalic.woff') format('woff');
+  font-family: 'roboto-bold-italic';
+  src: url('../fonts/roboto/Roboto-Bold-Italic.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -238,9 +238,8 @@ q:before, q:after {
 
   &-hr{
     width: 329px;
-    height: 5px;
-    margin-top: 22px;
-    color: #641faa;
+    margin-top: 29px;
+    border-top: 1px solid #641faa;
   }
 
   &-text{
@@ -260,7 +259,7 @@ q:before, q:after {
   background: url("./../img/result2.png");
 }
 
-.wprapper-block{
+.wrapper-block{
   width: 1110px;
   display: flex;
   flex-direction: row;
@@ -376,7 +375,7 @@ q:before, q:after {
 
 .product{
   height: 1093px;
-  margin-top: -8px;;
+  margin-top: 0px;;
   background: url("./../img/bg-product-min.jpg") 50% 50% no-repeat;
 
   &-wrapper{
@@ -384,26 +383,72 @@ q:before, q:after {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 21px;
+    padding-top: 52px;
   }
 
   &-hr{
     width: 45px;
-    height: 2px;
-    margin-top: 22px;
-    color: #ffffff;
+    margin-top: 28px;
+    border-top: 1px solid #ffffff;
   }
 
   &-text{
     font-family: roboto-thin;
-    font-size: 48px;
-    color: #641faa;
+    font-size: 47px;
+    color: #ffffff;
   }
-
 }
 
 
 
+.product{
+
+
+  &-main {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  &-text__head{
+    font-family: Roboto-Bold-Italic;
+    font-size: 23px;
+    color: #ffffff;
+  }
+
+  &-text__paragraph{
+    margin-top: 43px;
+    font-family: roboto-thin;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
+  }
+
+  &-left{
+    float: left;
+    margin-right: 24px;
+    &__img{
+      height: 230px;
+      width: 570px;
+      margin: 51px 0px;
+      background: url("./../img/before-after.jpg");
+    }
+
+  }
+
+  &-right{
+    &__block1{
+      padding-top: 52px;
+    }
+
+    &__block2{
+      padding-top: 64px;
+    }
+
+    &__block3{
+      padding-top: 52px;
+    }
+  }
+}
 
 
 
