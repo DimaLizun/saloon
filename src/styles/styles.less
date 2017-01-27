@@ -61,6 +61,13 @@ q:before, q:after {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'cormorant-boldItalic';
+  src: url('../fonts/roboto/Cormorant-BoldItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @purple: #641faa;
 
 .wrapper{
@@ -403,7 +410,6 @@ q:before, q:after {
 
 .product{
 
-
   &-main {
     width: 1170px;
     margin: 0 auto;
@@ -419,7 +425,7 @@ q:before, q:after {
     margin-top: 43px;
     font-family: roboto-thin;
     font-size: 16px;
-    color: #ffffff;
+    color: #a97bca;
     line-height: 24px;
   }
 
@@ -446,6 +452,86 @@ q:before, q:after {
 
     &__block3{
       padding-top: 52px;
+    }
+  }
+}
+
+
+.product{
+  
+
+  
+  &-footer{
+    clear: left;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 89px;
+
+
+
+
+
+    &-text{
+      font-family: roboto-thin;
+      font-size: 21px;
+      color: #ffffff;
+
+      &__pos1{
+        margin-top: 20px;
+      }
+      &__pos2{
+        margin-top: 29px;
+      }
+      &__pos3{
+        margin-top: 12px;
+      }
+      &__pos4{
+        margin-top: 12px;
+      }
+      &__pos5{
+         margin-top: 20px;
+       }
+
+    }
+
+    &-sprite{
+      background: url("./../img/icons_product-min.png");
+    }
+
+    &-icon1{
+      width: 45px;
+      height: 48px;
+      background-position: 0px 0px;
+    }
+
+    &-icon2{
+      width: 61px;
+      height: 37px;
+      background-position: 0px -58px;
+    }
+
+    &-icon3{
+      width: 43px;
+      height: 54px;
+      background-position: 0px -105px;
+    }
+
+    &-icon4{
+      width: 24px;
+      height: 54px;
+      background-position: 0px -169px;
+    }
+
+    &-icon5{
+      width: 59px;
+      height: 47px;
+      background-position: 0px -233px;
+    }
+
+    &-block1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
