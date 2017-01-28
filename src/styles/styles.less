@@ -40,6 +40,13 @@ q:before, q:after {
 }
 
 @font-face {
+  font-family: 'roboto-regular';
+  src: url('../fonts/roboto/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'roboto-ligth';
   src: url('../fonts/roboto/Roboto-Light.woff') format('woff');
   font-weight: normal;
@@ -458,18 +465,11 @@ q:before, q:after {
 
 
 .product{
-  
-
-  
   &-footer{
     clear: left;
     display: flex;
     justify-content: space-around;
     margin-top: 89px;
-
-
-
-
 
     &-text{
       font-family: roboto-thin;
@@ -562,11 +562,11 @@ q:before, q:after {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 21px;
+    padding-top: 31px;
   }
 
   &-hr{
-    width: 329px;
+    width: 367px;
     margin-top: 29px;
     border-top: 1px solid #641faa;
   }
@@ -577,28 +577,58 @@ q:before, q:after {
     color: #641faa;
   }
 
+  &-button{
+    width: 210px;
+    margin-top: 27px;
+  }
+
+  &-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 244px;
+    color: #ffffff;
+    h1{
+      font-family: roboto-regular;
+      font-size: 23px;
+    }
+
+    p{
+      font-family: roboto-thin;
+      font-size: 17px;
+      color: #929292;
+      margin-top: 86px;
+    }
+
+    span{
+      font-family: roboto-bold;
+      font-size: 30px;
+      margin-top: 19px;
+    }
+  }
+
 
   &-img{
     width: 1170px;
-    margin: 0 auto;
+    margin: 38px auto;
     display: flex;
     justify-content: space-between;
     &__sprite{
       width: 270px;
-      height: 200px;
-      background: url("./../img/sprite-face.jpg");
+      height: 609px;
+
     }
     &__1{
-      background-position: 0px 0px;
+      background: url("./../img/product-face1-min.jpg");
     }
     &__2{
-      background-position: 0px -210px;
+      background: url("./../img/product-face2-min.jpg");
     }
     &__3{
-      background-position: 0px -420px;
+      background: url("./../img/product-face3-min.jpg");
     }
     &__4{
-      background-position: 0px -630px;
+      background: url("./../img/product-face4-min.jpg");
     }
   }
 }
