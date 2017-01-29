@@ -98,7 +98,7 @@ q:before, q:after {
     justify-content: space-between;
 
     &__link{
-      font-family: roboto-thin;
+      font-family: roboto-ligth;
       font-size: 16px;
       color: #ffffff;
       text-decoration: none;
@@ -941,7 +941,105 @@ q:before, q:after {
 }
 
 
+.map{
+  height: 419px;
+  background: url("./../img/map-min.jpg") 50% 50% no-repeat;
 
+  &-wrapper{
+    width: 1170px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &-back{
+    height: 268px;
+    width: 358px;
+    margin: 73px 14px;
+    background: rgba(100, 31, 170, 0.8);
+    filter: alpha(Opacity=70);
+
+      .map-address{
+        margin: 31px 64px;
+        width: 281px;
+        font-family: roboto-ligth;
+        font-size: 21px;
+        color: #ffffff;
+        line-height: 29px;
+      }
+  }
+  &-contact{
+
+    margin: 38px -35px;
+
+    p{
+      color: #ffffff;
+    }
+  }
+  &-icon{
+    color: #ffffff;
+    margin-top: 9px;
+  }
+
+  &-sprite{
+    margin-left: 99px;
+  }
+
+  &-sprite-icon{
+    position: absolute;
+    background: url("./../img/result-sprite-footer.png");
+  }
+
+  &-icon-point{
+    width: 14px;
+    height: 20px;
+    margin: 37px 28px;
+    background-position: 0px -23px;
+  }
+
+  &-icon-phone{
+    width: 13px;
+    height: 13px;
+    margin: 8px 76px;
+    background-position: 0px 0px;
+  }
+
+}
+
+.footer{
+  height: 90px;
+  background: #eaeaea;
+
+
+  &-wrapper{
+    width: 1170px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-logo{
+    width: 156px;
+    height: 27px;
+    background: url("./../img/logo-footer-min.png");
+  }
+
+
+  p,
+  span{
+    color: #9c9c9c;
+    font-family: roboto-bold;
+    font-size: 16px;
+  }
+
+  &-year{
+    margin-left: 100px;
+  }
+}
 
 
 
