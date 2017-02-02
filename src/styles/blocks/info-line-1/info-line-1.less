@@ -1,0 +1,24 @@
+@import '/../../variables.less';
+@import  "/../../less/global/global-fonts";
+
+.info-line-1{
+  height: 141px;
+  padding-left: 100px;
+  background: url("img/info-line-1.jpg") @position_background;
+
+  &__text{
+    padding: 19px 12px;
+
+    &--bold{
+      font-family: cormorant-boldItalic;
+      font-size: 48px;
+      color: @white;
+    }
+
+    &--light{
+      font-family: roboto-thin;
+      font-size: 28px;
+      color: #a4a5a8;
+    }
+  }
+}

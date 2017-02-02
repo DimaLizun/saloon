@@ -1,0 +1,86 @@
+@import '/../../variables.less';
+@import "/../../less/global/global-fonts";
+
+
+//text
+.contact{
+  width: 333px;
+  height: 235px;
+  margin: 245px 729px;
+  background: @white;
+  border: 10px solid @purple;
+  border-top: 50px solid @purple;
+  border-radius: 1px;
+
+  &__text--head{
+    letter-spacing: 1.2px;
+    font-family: roboto-thin;
+    font-size: 20px;
+    color: @white;
+    position: absolute;
+    margin: -39px 42px;
+  }
+}
+
+// icons - sprite
+.contact{
+  &__sprite{
+    background:url('./img/result.png');
+  }
+
+  &__icon-phone{
+    margin: 22px 78px;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-position: 0px 0px;
+  }
+
+  &__icon{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 84px;
+    margin: -1px 120px;
+  }
+  &__icon-viber{
+    width: 38px;
+    height: 38px;
+    background-position: 0px -23px;
+  }
+
+  &__icon-whatsapp{
+    width: 38px;
+    height: 38px;
+    background-position: 0px -71px;
+  }
+}
+
+
+
+// form information
+.contact{
+  &__number{
+    width: 149px;
+    margin: 15px 100px;
+    font-family: roboto-thin;
+    font-size: 22px;
+    color: @purple;
+  }
+
+  &__address{
+    width: 257px;
+    margin: 13px 41px;
+    letter-spacing: 0.3px;
+    font-family: roboto-ligth;
+    font-size: 18px;
+    color: @purple;
+  }
+
+  &--position-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+  }
+}
+
+

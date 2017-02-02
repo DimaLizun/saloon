@@ -1,0 +1,81 @@
+@import '/../../variables.less';
+@import "/../../less/global/global-fonts";
+
+
+
+.product{
+  height: 1093px;
+  margin-top: 0px;;
+  background: url("./img/bg-product-min.jpg") @position_background;
+
+  &__head{
+    width: 1171px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
+
+
+  &__head--width{
+    width: 45px;
+    margin-top: 28px;
+    border-top: 1px solid @white;
+  }
+
+
+  &__text--color{
+    font-family: roboto-thin;
+    font-size: 47px;
+    color: @white;
+  }
+
+}
+
+.product{
+
+  &--width{
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__text--big{
+    font-family: Roboto-Bold-Italic;
+    font-size: 23px;
+    color: #ffffff;
+  }
+
+  &__text--small{
+    margin-top: 43px;
+    font-family: roboto-thin;
+    font-size: 16px;
+    color: @purple-184;
+    line-height: 24px;
+  }
+
+  &__block--left{
+    float: left;
+    margin-right: 24px;
+  }
+
+  &__img{
+    height: 230px;
+    width: 570px;
+    margin: 51px 0px;
+    background: url("./img/before-after.jpg");
+  }
+
+
+    &__block1--right{
+      padding-top: 52px;
+    }
+
+    &__block2--right{
+      padding-top: 64px;
+    }
+
+    &__block3--right{
+      padding-top: 52px;
+    }
+
+}

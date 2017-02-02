@@ -1,0 +1,25 @@
+@import '/../../variables.less';
+@import "/../../less/global/global-fonts";
+
+
+.info-line-2 {
+  height: 169px;
+  background: url("./img/line-girl-min.jpg") @position_background;
+  &__text{
+    padding: 16px 451px;
+    position: absolute;
+    &--bold {
+      font-family: cormorant-boldItalic;
+      font-size: 48px;
+      color: @white;
+    }
+
+    &--light{
+      width: 784px;
+      margin-top: 10px;
+      font-family: roboto-thin;
+      font-size: 21px;
+      color: @white;
+    }
+  }
+}

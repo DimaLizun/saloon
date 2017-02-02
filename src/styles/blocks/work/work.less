@@ -1,0 +1,51 @@
+@import '/../../variables.less';
+@import "/../../less/global/global-fonts";
+
+
+
+.work{
+  height: 420px;
+  background: url("./img/bg-works-min.jpg");
+
+  &__head{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+
+    &--width{
+      width: 399px;
+      border-top: 1px solid @white;
+    }
+  }
+
+  &__text--color{
+    color: @white;
+  }
+
+  &__wrapper {
+    width: 1170px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+    &__img--sprite{
+      width: 270px;
+      height: 200px;
+      background: url("./img/sprite-face.jpg");
+      box-shadow: 0 0 7px rgba(243, 242, 255, 0.93);
+    }
+    &__img-1{
+      background-position: 0px 0px;
+    }
+    &__img-2{
+      background-position: 0px -210px;
+    }
+    &__img-3{
+      background-position: 0px -420px;
+    }
+    &__img-4{
+      background-position: 0px -630px;
+    }
+  }

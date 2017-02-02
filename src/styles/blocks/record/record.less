@@ -1,0 +1,64 @@
+@import '/../../variables.less';
+@import  "/../../less/global/global-fonts";
+
+.record{
+  height: 520px;
+  background: url("./img/bg-input-form-min.jpg") 45% 50% no-repeat;
+
+  &__wrapper{
+    width: 1170px;
+    margin: 0 auto;
+
+  }
+  &__header{
+    color: @purple;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+      padding-top: 23px;
+      font-family: roboto-thin;
+      font-size: 47px;
+    }
+
+    h2{
+      padding-left: 5px;
+      font-family: roboto-bold;
+      font-size: 27px;
+    }
+
+    h3{
+      padding-left: 10px;
+      font-family: roboto-ligth;
+      font-size: 22px;
+
+    }
+  }
+
+
+&__instrument{
+    display: flex;
+
+  &-icon{
+    margin-top: 107px;
+    background: url("./img/icon-plus-min.png");
+    height: 44px;
+    width: 41px;
+   }
+
+  &-img{
+    margin: 7px 27px;
+    background: url("./img/inst-min.jpg");
+    height: 246px;
+    width: 246px;
+  }
+
+  &-text{
+    font-family: roboto-ligth;
+    font-size: 12px;
+    color: #333333;
+    margin: 17px 37px;
+    line-height: 15px;
+    }
+  }
+}

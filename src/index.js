@@ -1,3 +1,3 @@
 
-import './styles/styles.less';
-//require('./styles/styles.less');
+import './styles/main.less';
+
