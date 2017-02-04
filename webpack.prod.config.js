@@ -3,14 +3,6 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
-
-let lessIdentifier = '[hash:base64:10]';
-
-let lessLoader = ExtractTextPlugin.extract({
-        loader: 'less-loader?minimize&localIdentName=' + lessIdentifier});
-
-
-
 module.exports = {
     devtool: 'source-map',
 
