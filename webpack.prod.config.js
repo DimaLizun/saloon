@@ -37,41 +37,37 @@ module.exports = {
                 'NODE_ENV': JSON.stringify('production')
             }
         }),
-        new ExtractTextPlugin('style-[contenthash:10].css'),
+        new ExtractTextPlugin('style-content[hash:10].css'),
         new HTMLWebpackPlugin({
             template: 'index-template.html'
         })
     ],
-
+    //
     module: {
         loaders: [
 
             {test: /\.js/, loaders: ['babel'], exclude: /node_modules/ },
             {test: /\.jsx/, loaders: ['babel'], exclude: /node_modules/ },
-            {test: /\.css/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
-            {test: /\.less$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")},
-            {test: /\.json$/, loader: 'json'},
-            {test: /\.jpe?g$|\.gif$|\.png$|\.ico$|\.jpg$/, loader: 'file?name=[name].[ext]'},
-            {test: /\.eot|\.ttf|\.svg|\.woff2?/, loader: 'file?name=[name].[ext]'}
-
-            /*
-            { test: /\.js?$/,
-                loader: 'babel',
-                include: path.join(__dirname, 'src') },
+            {
+                test: /\.css/,
+                loader: ExtractTextPlugin.extract("postcss-loader!сss-loader?minimize&localIdentName=[hash:base64:10]")
+            },
             {
                 test: /\.less$/,
-                loader: lessLoader,
-                exclude: /node_modules/,
-                include: path.join(__dirname, 'src', 'styles')
+                loader:  ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader!less-loader")
             },
-            { test: /\.(png|jpg|gif)$/,
-                loader: ['url-loader?limit=10000&name=images/[hash:12].[ext]'],
-                exclude: /node_modules/
+            {
+                test: /\.json$/,
+                loader: 'json'
             },
-            { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-                loader: 'file',
-                exclude: /node_modules/
-            }*/
+            {
+                test: /\.jpe?g$|\.gif$|\.png$|\.ico$|\.jpg$/,
+                loader: 'file?name=images/[hash:12].[ext]'
+            },
+            {
+                test: /\.eot|\.ttf|\.svg|\.woff2?/,
+                loader: 'file?name=fonts/[hash:12].[ext]'
+            }
         ]
     }
 };

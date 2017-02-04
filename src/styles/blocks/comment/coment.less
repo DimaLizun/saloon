@@ -6,10 +6,6 @@
   height: 509px;
 
   &__head{
-    width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     padding-top: 29px;
 
     &--width{
@@ -28,10 +24,13 @@
     width: 392px;
     margin: -18px 7px;
     background: url("./img/girl.png") no-repeat;
+    float: left;
+    padding-left: 396px;
   }
 
   &__content{
     display: flex;
+    flex-direction: row;
     margin: 94px 94px;
 
     &-img{
@@ -41,6 +40,7 @@
     }
 
     &-text{
+      width: 239px;
       margin-left: 23px;
 
       h1{
@@ -67,8 +67,8 @@
 
 .comment{
   &__arrow{
-    position: absolute;
-    margin: 54px 118px;
+    
+    margin: 56px 115px;
   }
 
   &__arrow--left{
