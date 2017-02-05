@@ -1,0 +1,33 @@
+.menu-mob {
+  visibility: hidden;
+  position: absolute;
+
+  &__icon {
+    //display: hidden;
+    width: 40px;
+    height: 40px;
+    background: url("img/menu-icon.png") center;
+  }
+
+  &__item {
+    color: #8b31e6;
+    text-decoration: none;
+    font-family: roboto-bold;
+    font-size: 20px;
+
+    &:hover {
+      color: #ffffff;
+    }
+
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      display: inline-block;
+      float: left;
+      padding: 7px
+    }
+  }
+}

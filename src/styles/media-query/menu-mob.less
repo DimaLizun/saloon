@@ -1,0 +1,35 @@
+@media only screen
+and (min-device-width : 300px)
+and (max-device-width : 480px) {
+
+  .menu-mob{
+    position: static;
+    visibility: visible;
+    padding: 4% 2%;
+    &__icon{
+      display: inline-block;
+    }
+
+    li {
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+      margin: 0;
+    }
+
+    &:hover ul {
+      display: block;
+    }
+  }
+  nav ul, nav:active ul {
+    visibility: visible;
+    display: none;
+    position: absolute;
+    padding: 15px;
+    background: #3b0d52;
+    border: 1px solid #562b9e;
+    right: 17%;
+    top: 13%;
+    z-index: 2;
+  }
+}
