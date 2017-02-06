@@ -1,6 +1,7 @@
+/* ----------- iPhone 5 ----------- */
 @media only screen
-and (min-device-width : 300px)
-and (max-device-width : 480px) {
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
 
   .menu-mob{
     position: static;
@@ -25,11 +26,37 @@ and (max-device-width : 480px) {
     visibility: visible;
     display: none;
     position: absolute;
-    padding: 15px;
-    background: #3b0d52;
-    border: 1px solid #562b9e;
-    right: 17%;
-    top: 13%;
+    padding: 34px;
+    background: #efefef;
+    border: 2px solid #161617;
+    border-radius: 30px;
+    right: 14%;
+    top: 9%;
     z-index: 2;
+  }
+}
+/* ----------- iPhone 6 ----------- */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px){
+  .menu-mob {
+    padding: 5% 4%;
+  }
+}
+/* ----------- iPhone 6+ ----------- */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px) {
+  nav ul, nav:active ul {
+    right: 22%;
+    top: 8%;
+  }
+}
+/* ----------- Galaxy S5 ----------- */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px) {
+  nav ul, nav:active ul {
+   right: 18%;
   }
 }
