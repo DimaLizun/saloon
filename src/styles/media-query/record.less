@@ -1,0 +1,103 @@
+/* ----------- iPhone 5 ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+  .record {
+
+    height: 880px;
+    background: #ffffff;
+    &__header {
+
+      h1 {
+        padding-top: 23px;
+        font-family: roboto-ligth;
+        font-size: 24px;
+      }
+
+      h2 {
+        padding-left: 0px;
+        font-size: 17px;
+        margin-top: 10px;
+      }
+
+      h3 {
+        padding-left: 0px;
+        font-size: 11px;
+        margin-top: 11px;
+      }
+    }
+
+    &__instrument {
+      flex-direction: column;
+    }
+
+    &__instrument-icon {
+      margin: 10px 42%;
+    }
+
+    &__instrument-img {
+      margin: 25px 10%;
+    }
+
+    &__instrument-text {
+      width: 255px;
+     br{
+       display: none;
+     }
+    }
+  }
+}
+/* ----------- iPhone 6 ----------- */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px) {
+  .record{
+    &__instrument{
+      margin-left: 7%;
+    }
+    &__instrument-img {
+      margin: 25px 9%;
+    }
+  }
+}
+/* ----------- iPhone 6+ ----------- */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px) {
+  .record{
+
+    &__instrument-icon {
+      margin: 10px 40%;
+    }
+    &__instrument{
+      margin-left: 9%;
+    }
+    &__instrument-img {
+      margin: 25px 14%;
+    }
+
+    &__instrument-text {
+      padding-left: 3%;
+    }
+  }
+}
+/* ----------- Galaxy S5 ----------- */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px) {
+
+  .record{
+    &__instrument{
+      margin-left: 4%;
+    }
+
+    &__instrument-img {
+      margin: 25px 10%;
+    }
+
+    &__instrument-text {
+      padding-left: 1%;
+    }
+  }
+
+}

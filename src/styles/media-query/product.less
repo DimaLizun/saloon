@@ -1,0 +1,147 @@
+/* ----------- iPhone 5 ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+
+  .product {
+    height: 1975px;
+    background: url("img/bg-product-min.jpg");
+    background-size: cover;
+
+    &__block--left {
+      float: none;
+      margin-right: 0;
+    }
+
+    &__text--color {
+      width: 224px;
+      font-size: 19px;
+      margin-left: -17%;
+      line-height: 24px;
+    }
+    &__head {
+      padding: 7% 20%;
+    }
+
+    &__img {
+      width: 83%;
+      height: auto;
+      padding-left: 9%;
+      margin-top: 39px;
+      margin-bottom: 30px;
+    }
+
+    &__text--left,
+    &--right {
+      margin-left: 9%;
+    }
+
+    &__text--big {
+      font-size: 16px;
+    }
+    &__text--small {
+      width: 268px;
+      margin-top: 10px;
+      font-family: roboto-ligth;
+      font-size: 12px;
+      line-height: 19px;
+
+      br {
+        display: none;
+      }
+    }
+
+
+
+    &__block1--right,
+    &__block2--right,
+    &__block3--right {
+      padding-top: 15px;
+    }
+
+  }
+
+  .quality {
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2% 26%;
+
+    &__item-text {
+      font-family: roboto-ligth;
+      font-size: 16px;
+    }
+
+    &__item-icon1,
+    &__item-icon2,
+    &__item-icon3,
+    &__item-icon4,
+    &__item-icon5{
+       margin-top: 30px;
+    }
+
+    &__item-text--pos2 {
+      margin-top: 21px;
+    }
+  }
+}
+/* ----------- iPhone 6 ----------- */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px) {
+
+  .product {
+    height: 1875px;
+
+    &__text--small {
+      width: 309px;
+    }
+  }
+
+  .quality {
+    margin: 2% 30%;
+  }
+}
+/* ----------- iPhone 6+ ----------- */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px) {
+  .product {
+    height: 1830px;
+
+    &__text--small {
+      width: 345px;
+    }
+
+    &__text--width{
+      width: 310px;
+    }
+  }
+
+  .quality {
+    margin: 2% 32%;
+  }
+}
+/* ----------- Galaxy S5 ----------- */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px) {
+  .product {
+    height: 1901px;
+
+    &__text--small {
+      width: 290px;
+
+    }
+
+    &__text--width{
+      width: 309px;
+      line-height: 20px;
+    }
+  }
+
+  .quality {
+    margin: 2% 28%;
+  }
+}

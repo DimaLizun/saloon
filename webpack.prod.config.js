@@ -11,7 +11,7 @@ module.exports = {
     ],
 
     output: {
-        path: path.join(__dirname, 'public'),
+        path: path.join(__dirname, 'dist'),
         filename: 'bundle.[hash:12].min.js',
         publicPath: ''
     },
@@ -54,7 +54,8 @@ module.exports = {
             },
             {
                 test: /\.jpe?g$|\.gif$|\.png$|\.ico$|\.jpg$/,
-                loader: 'file?name=images/[hash:12].[ext]'
+                loader: 'file?name=images/[hash:12].[ext]',
+
             },
             {
                 test: /\.eot|\.ttf|\.svg|\.woff2?/,

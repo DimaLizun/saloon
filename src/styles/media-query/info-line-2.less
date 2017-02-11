@@ -1,0 +1,64 @@
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+  .info-line-2 {
+    height: 265px;
+    background: url("img/bg-info-line2-min.jpg");
+    background-size: cover;
+
+    &__text {
+      padding: 7% 7%;
+      position: static;
+
+      &--bold {
+        font-size: 29px;
+        line-height: 30px;
+      }
+
+      &--light {
+        width: 175px;
+        margin-top: 14px;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px){
+  .info-line-2__text {
+    padding: 7% 10%;
+  }
+}
+
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px) {
+  .info-line-2__text {
+    padding: 8% 14%;
+  }
+}
+
+
+/* ----------- Galaxy S5 ----------- */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px) {
+  .info-line-2__text {
+    padding: 6% 9%;
+  }
+}

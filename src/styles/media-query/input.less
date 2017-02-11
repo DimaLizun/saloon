@@ -1,0 +1,53 @@
+/* ----------- iPhone 5 ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+  .input {
+      width: 200px;
+      margin: 20px 6%;
+      display: flex;
+      flex-direction: column;
+      float: none;
+
+    input[type=text] {
+      width: 259px;
+      height: 44px;
+    }
+
+    .input__button {
+       margin: 26px 26%;
+    }
+
+    &__text--up{
+      margin: -8px 26%;
+    }
+
+    &__text--down{
+      margin: 9px 50%;
+    }
+  }
+}
+/* ----------- iPhone 6 ----------- */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px) {
+ .input {
+   margin: 20px 12%;
+ }
+}
+/* ----------- iPhone 6+ ----------- */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px) {
+  .input {
+    margin: 20px 15%;
+  }
+}
+/* ----------- Galaxy S5 ----------- */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px) {
+  .input {
+    margin: 20px 10%;
+  }
+}

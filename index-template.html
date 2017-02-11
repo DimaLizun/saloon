@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;
+     minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
 </head>
 <body>
 
@@ -97,7 +98,7 @@
 
     <div class="description">
 
-        <div class="headline">
+        <div class="headline description__head">
             <div class="headline__hr"></div>
             <div class="headline__text">ЧТО ТЕБЯ ОЖИДАЕТ?</div>
             <div class="headline__hr"></div>
@@ -126,7 +127,7 @@
             <div class="block block--big">
                 <div class="block__icon3 block--sprite-icon"></div>
                 <h1>Красота</h1>
-                <p>Удлинение и увеличение объема
+                <p class="block__text block__text--left">Удлинение и увеличение объема
                     &nbsp&nbsp&nbspИдеально при любой погоде
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВыразительный взгляд</p>
             </div>
@@ -147,12 +148,13 @@
                 <p>
                     <span class="statistic__up">Часов сна в подарок</span><br>
                     <span class="statistic__down">получила прекрасная половина Киева.</span><br>
-                    Какая экономия времени на утреннем макияже!
+                    <span class="statistic__hidden">Какая экономия времени на макияже!</span>
                 </p>
+
             </div>
 
             <div class="statistic__block">
-                <h1>4372</h1>
+                <h1 class="statistic__header statistic__number--left">4372</h1>
                 <p>
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbspПроцедуры наращивания<br>
                     уже было сделано для идеального<br>
@@ -161,8 +163,8 @@
             </div>
 
             <div class="statistic__block">
-                <h1>94%</h1>
-                <p>
+                <h1 class="statistic__header statistic__persent--left">94%</h1>
+                <p class="statistic__par statistic__par--left" >
                     &nbsp&nbspДевушек возвращаются<br>
                     &nbspпосле первой процедуры<br>
                     &nbsp&nbspлюди остаются надолго
@@ -193,7 +195,9 @@
         <div class="product--width">
             <div class="product__block--left">
 
-                <div class="product__img"></div>
+                <!--<div class="product__img"></div> -->
+
+                <img class="product__img" src="public/before-after.jpg" />
 
                 <div class="product__text--left">
                     <h1 class="product__text--big">Экономия времени и денег</h1>
@@ -217,7 +221,7 @@
             </div>
             <div class="product--right">
                 <div class="product__block1--right">
-                    <h1 class="product__text--big">Длительный эффект</h1>
+                    <h1 class="product__text--big ">Длительный эффект</h1>
                     <p class="product__text--small">В среднем нарощенные ресницы будут выглядеть превосходно в течение 2-4<br>
                         недель. Зависит это от нескольких факторов. Большое значение имеет тип<br>
                         кожи: если она жирная, перенаращивание делается чаще. Также<br>
@@ -235,7 +239,7 @@
                     </p>
                 </div>
                 <div class="product__block3--right">
-                    <h1 class="product__text--big">Невероятно красивый, завораживающий взгляд</h1>
+                    <h1 class="product__text--big product__text--width">Невероятно красивый, завораживающий взгляд</h1>
                     <p class="product__text--small">Именно ради этого женщины и стремятся нарастить реснички.<br>
                         Взгляд становится удивительно выразительным, не обратить внимания на<br>
                         такую женщину просто невозможно.
@@ -550,6 +554,6 @@
 
 
 </div>
-<script type="text/javascript" src="/public/bundle.js"></script>
+
 </body>
 </html>
